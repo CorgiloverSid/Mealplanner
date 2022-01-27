@@ -10,7 +10,7 @@ class TestStringMethods(unittest.TestCase):
 
         breakfasts = meal_plan["breakfast"]
         expected_ingredients = ["egg"]
-        self.assertEqual(len(breakfasts), 2)
+        self.assertEqual(len(breakfasts), 3)
         self.assertEqual(breakfasts[0].get_recipe_name(), "pancake")
         self.assertEqual(breakfasts[0].get_ingredients(), expected_ingredients)
         self.assertEqual(len(meal_plan["lunch"]), 1)
