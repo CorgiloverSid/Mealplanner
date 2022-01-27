@@ -13,5 +13,5 @@ class RecipeGenerator:
 
     def get_recipes(self, recipes, generated_recipes, amount):
         for index in range(int(amount)):
-
-            generated_recipes.append(recipes[index])
+            if len(recipes) > index:
+                generated_recipes.append(recipes[index])

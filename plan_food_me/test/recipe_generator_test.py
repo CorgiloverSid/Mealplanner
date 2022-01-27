@@ -20,12 +20,12 @@ class TestStringMethods(unittest.TestCase):
         meal_plan = {
             "breakfast": ["pancake", "cereal"],
             "lunch": ["sandwich", "bagel"],
-            "dinner": ["egg", "bape", "pie"]
+            "dinner": ["pie"]
         }
         recipe_generator = RecipeGenerator(meal_plan)
         generated_recipes = recipe_generator.generate_recipes(2)
 
-        expected_recipes = ["pancake", "cereal", "sandwich", "bagel", "egg", "bape"]
+        expected_recipes = ["pancake", "cereal", "sandwich", "bagel", "pie"]
         self.assertEqual(expected_recipes, generated_recipes)
 
 
